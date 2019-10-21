@@ -59,6 +59,13 @@
 <body>
   <h1>Uploading</h1>
   <!--   PHOTO-->
+  <form action="/uploadperson" enctype="multipart/form-data" method="POST">
+    <label for="image">🖼️ Select image and save :</label>
+    <input id="image" type="file" name="image" accept="image/*" />
+    <label for="name">Enter Name: </label>
+    <input id="name" type="text" name="name"/>
+    <input type="submit" value="Upload an Image" />
+  </form>
   <form action="/uploadimage" enctype="multipart/form-data" method="POST">
     <label for="image">🖼️ Select image and save :</label>
     <input id="image" type="file" name="image" accept="image/*" />
